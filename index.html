@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>NIETO CARPENTRY | Custom Carpentry in Mont Belvieu &amp; Baytown</title>
+  <meta name="description" content="Roofing, framing, and remodeling in Mont Belvieu, Baytown, and East Houston. Enrique Nieto and crew. Call (832) 414-9680 for a free estimate.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="NIETO CARPENTRY | Custom Carpentry in Mont Belvieu &amp; Baytown">
+  <meta property="og:description" content="Roofing, framing, and remodeling by Enrique Nieto. Mont Belvieu, Baytown, and East Houston.">
+  <meta property="og:image" content="assets/img/og-image.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://nietocarpentry.com">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+
+  <!-- Fonts: Inter (sans) + DM Serif Display (serif) + Playfair Display (accent serif) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <!-- Reveal animation styles (inline to avoid FOUC) -->
+  <style>
+    .reveal {
+      opacity: 0;
+      transform: translateY(32px);
+      transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    .reveal.reveal-left {
+      transform: translateX(-40px);
+    }
+    .reveal.reveal-right {
+      transform: translateX(40px);
+    }
+    .reveal.reveal-scale {
+      transform: scale(0.95);
+    }
+    .reveal.revealed {
+      opacity: 1;
+      transform: translateY(0) translateX(0) scale(1);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Film grain overlay for premium texture -->
+  <div class="grain-overlay" aria-hidden="true"></div>
+
+  <!-- ============================================================
+       HEADER
+       ============================================================ -->
+  <header class="site-header" role="banner">
+    <div class="container nav-inner">
+      <a href="#" class="logo" aria-label="Nieto Carpentry — Home">
+        <span class="logo-rule"></span>
+        Nieto Carpentry
+      </a>
+
+      <button class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav-links" role="navigation" aria-label="Primary">
+        <a href="#services">Services</a>
+        <a href="#work">Work</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="tel:8324149680" class="nav-cta">(832) 414-9680</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============================================================
+       HERO — Ken Burns Slideshow
+       IMAGES: Replace the slide images below with your own stock
+       carpentry photos. Recommended: 1920×1080, landscape.
+       ============================================================ -->
+  <section class="hero" id="hero">
+    <div class="hero-slideshow">
+      <div class="hero-slide active" style="background-image: url('assets/img/hero1.jpg')"></div>
+      <div class="hero-slide" style="background-image: url('assets/img/hero2.jpg')"></div>
+      <div class="hero-slide" style="background-image: url('assets/img/hero3.jpg')"></div>
+    </div>
+
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-content">
+      <span class="section-label hero-label">Mont Belvieu &amp; Baytown, TX</span>
+      <h1 class="hero-title">
+        <span class="hero-title-line">Carpentry done right.</span>
+      </h1>
+      <p class="hero-desc">Roofing, framing, and remodeling for homeowners in Mont Belvieu, Baytown, and nearby areas. Owned and operated by Enrique Nieto.</p>
+      <div class="hero-actions">
+        <a href="tel:8324149680" class="btn btn-gold">Call (832) 414-9680</a>
+        <a href="#work" class="btn btn-outline">See Our Work</a>
+      </div>
+    </div>
+
+    <div class="hero-scroll" aria-hidden="true">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+
+    <!-- Slide indicators -->
+    <div class="hero-indicators" aria-hidden="true">
+      <button class="hero-dot active" data-slide="0"></button>
+      <button class="hero-dot" data-slide="1"></button>
+      <button class="hero-dot" data-slide="2"></button>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SERVICES
+       ============================================================ -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="services-header reveal">
+        <span class="section-label">What We Do</span>
+        <h2 class="section-heading">Our services.</h2>
+        <hr class="gold-rule">
+      </div>
+
+      <div class="services-grid">
+        <article class="service-card reveal" style="transition-delay: 0.1s">
+          <span class="service-number">01</span>
+          <h3>Roofing</h3>
+          <p>Roof repairs and replacements for homes damaged by age or storms. Shingle, metal, and flat roofs. We find the problem and fix it properly.</p>
+        </article>
+
+        <article class="service-card reveal" style="transition-delay: 0.2s">
+          <span class="service-number">02</span>
+          <h3>Framing</h3>
+          <p>Framing for new construction, additions, and remodels. Walls, floors, and roof structures built straight, square, and to code.</p>
+        </article>
+
+        <article class="service-card reveal" style="transition-delay: 0.3s">
+          <span class="service-number">03</span>
+          <h3>Remodeling</h3>
+          <p>Kitchen and bathroom remodels, room additions, and full home renovations. We handle the work from demo to finish.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FEATURED PROJECTS
+       ============================================================ -->
+  <section class="featured" id="work">
+    <div class="container">
+      <div class="featured-header reveal">
+        <div>
+          <span class="section-label">Selected Work</span>
+          <h2 class="section-heading">Recent work.</h2>
+        </div>
+      </div>
+
+      <div class="featured-grid">
+        <div class="featured-item reveal reveal-left">
+          <img src="assets/img/remodel.jpg"
+               alt="Featured project — residential remodel"
+               width="1200" height="800"
+               loading="lazy">
+          <div class="featured-caption">
+            <h3>Full home remodel</h3>
+            <span>Mont Belvieu</span>
+          </div>
+        </div>
+
+        <div class="featured-item reveal reveal-right">
+          <img src="assets/img/roof.jpg"
+               alt="Featured project — new roof installation"
+               width="1200" height="800"
+               loading="lazy">
+          <div class="featured-caption">
+            <h3>Roof replacement</h3>
+            <span>Baytown</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       GALLERY
+       ============================================================ -->
+  <section class="gallery">
+    <div class="container">
+      <div class="gallery-header reveal">
+        <span class="section-label">Gallery</span>
+        <h2 class="section-heading">More projects.</h2>
+        <hr class="gold-rule">
+      </div>
+    </div>
+
+    <div class="gallery-grid">
+      <div class="gallery-item" role="button" tabindex="0" aria-label="View project photo 1">
+        <img src="assets/img/work-01.jpg" alt="Carpentry project 1" width="800" height="600" loading="lazy">
+      </div>
+      <div class="gallery-item" role="button" tabindex="0" aria-label="View project photo 2">
+        <img src="assets/img/work-02.jpg" alt="Carpentry project 2" width="800" height="600" loading="lazy">
+      </div>
+      <div class="gallery-item" role="button" tabindex="0" aria-label="View project photo 3">
+        <img src="assets/img/work-03.jpg" alt="Carpentry project 3" width="800" height="600" loading="lazy">
+      </div>
+      <div class="gallery-item" role="button" tabindex="0" aria-label="View project photo 4">
+        <img src="assets/img/work-04.jpg" alt="Carpentry project 4" width="800" height="600" loading="lazy">
+      </div>
+      <div class="gallery-item" role="button" tabindex="0" aria-label="View project photo 5">
+        <img src="assets/img/work-05.jpg" alt="Carpentry project 5" width="800" height="600" loading="lazy">
+      </div>
+      <div class="gallery-item" role="button" tabindex="0" aria-label="View project photo 6">
+        <img src="assets/img/work-06.jpg" alt="Carpentry project 6" width="800" height="600" loading="lazy">
+      </div>
+      <div class="gallery-item" role="button" tabindex="0" aria-label="View project photo 7">
+        <img src="assets/img/work-07.jpg" alt="Carpentry project 7" width="800" height="600" loading="lazy">
+      </div>
+      <div class="gallery-item" role="button" tabindex="0" aria-label="View project photo 8">
+        <img src="assets/img/work-08.jpg" alt="Carpentry project 8" width="800" height="600" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       REVIEWS
+       ============================================================ -->
+  <section class="reviews" id="reviews">
+    <div class="container">
+      <div class="reviews-header reveal">
+        <span class="section-label">Client Reviews</span>
+        <h2 class="section-heading">Reviews from<br>local homeowners.</h2>
+        <hr class="gold-rule">
+      </div>
+
+      <div class="reviews-grid">
+        <!-- Review 1: Will Rubio -->
+        <article class="review-card review-card--featured reveal" style="transition-delay: 0.05s">
+          <div class="review-quote-mark" aria-hidden="true">&ldquo;</div>
+          <div class="review-stars" aria-label="5 out of 5 stars">
+            <svg viewBox="0 0 20 20" class="star-icon filled"><polygon points="10,1 12.6,7.2 19.5,7.6 14.2,12 15.8,18.7 10,15.2 4.2,18.7 5.8,12 0.5,7.6 7.4,7.2"/></svg>
+            <svg viewBox="0 0 20 20" class="star-icon filled"><polygon points="10,1 12.6,7.2 19.5,7.6 14.2,12 15.8,18.7 10,15.2 4.2,18.7 5.8,12 0.5,7.6 7.4,7.2"/></svg>
+            <svg viewBox="0 0 20 20" class="star-icon filled"><polygon points="10,1 12.6,7.2 19.5,7.6 14.2,12 15.8,18.7 10,15.2 4.2,18.7 5.8,12 0.5,7.6 7.4,7.2"/></svg>
+            <svg viewBox="0 0 20 20" class="star-icon filled"><polygon points="10,1 12.6,7.2 19.5,7.6 14.2,12 15.8,18.7 10,15.2 4.2,18.7 5.8,12 0.5,7.6 7.4,7.2"/></svg>
+            <svg viewBox="0 0 20 20" class="star-icon filled"><polygon points="10,1 12.6,7.2 19.5,7.6 14.2,12 15.8,18.7 10,15.2 4.2,18.7 5.8,12 0.5,7.6 7.4,7.2"/></svg>
+          </div>
+          <blockquote class="review-text">
+            <p>Enrique Nieto just finished working on my house. He did a great job on the roof after hurricane Beryl. Not only that, he also remodeled my whole kitchen, back patio, a small room that was added to my house, and a large storage unit. He does amazing work and on top of that he is quick, reliable, and stays within budget. Don't pass on him for sure — make sure you get on the waitlist for sure.</p>
+          </blockquote>
+          <footer class="review-author">
+            <div class="review-author-info">
+              <cite class="review-name">Will Rubio</cite>
+            </div>
+          </footer>
+        </article>
+
+        <!-- Review 2: Noemi Nieto -->
+        <article class="review-card reveal" style="transition-delay: 0.15s">
+          <div class="review-quote-mark" aria-hidden="true">&ldquo;</div>
+          <div class="review-stars" aria-label="5 out of 5 stars">
+            <svg viewBox="0 0 20 20" class="star-icon filled"><polygon points="10,1 12.6,7.2 19.5,7.6 14.2,12 15.8,18.7 10,15.2 4.2,18.7 5.8,12 0.5,7.6 7.4,7.2"/></svg>
+            <svg viewBox="0 0 20 20" class="star-icon filled"><polygon points="10,1 12.6,7.2 19.5,7.6 14.2,12 15.8,18.7 10,15.2 4.2,18.7 5.8,12 0.5,7.6 7.4,7.2"/></svg>
+            <svg viewBox="0 0 20 20" class="star-icon filled"><polygon points="10,1 12.6,7.2 19.5,7.6 14.2,12 15.8,18.7 10,15.2 4.2,18.7 5.8,12 0.5,7.6 7.4,7.2"/></svg>
+            <svg viewBox="0 0 20 20" class="star-icon filled"><polygon points="10,1 12.6,7.2 19.5,7.6 14.2,12 15.8,18.7 10,15.2 4.2,18.7 5.8,12 0.5,7.6 7.4,7.2"/></svg>
+            <svg viewBox="0 0 20 20" class="star-icon filled"><polygon points="10,1 12.6,7.2 19.5,7.6 14.2,12 15.8,18.7 10,15.2 4.2,18.7 5.8,12 0.5,7.6 7.4,7.2"/></svg>
+          </div>
+          <blockquote class="review-text">
+            <p>Very experienced with a variety of skills, from building to roofing to remodeling. Very affordable and does an amazing job each and every time. Highly recommended for anyone in need of these services.</p>
+          </blockquote>
+          <footer class="review-author">
+            <div class="review-author-info">
+              <cite class="review-name">Noemi Nieto</cite>
+            </div>
+          </footer>
+        </article>
+
+        <!-- Review 3: Romeo Nieto -->
+        <article class="review-card reveal" style="transition-delay: 0.25s">
+          <div class="review-quote-mark" aria-hidden="true">&ldquo;</div>
+          <div class="review-stars" aria-label="5 out of 5 stars">
+            <svg viewBox="0 0 20 20" class="star-icon filled"><polygon points="10,1 12.6,7.2 19.5,7.6 14.2,12 15.8,18.7 10,15.2 4.2,18.7 5.8,12 0.5,7.6 7.4,7.2"/></svg>
+            <svg viewBox="0 0 20 20" class="star-icon filled"><polygon points="10,1 12.6,7.2 19.5,7.6 14.2,12 15.8,18.7 10,15.2 4.2,18.7 5.8,12 0.5,7.6 7.4,7.2"/></svg>
+            <svg viewBox="0 0 20 20" class="star-icon filled"><polygon points="10,1 12.6,7.2 19.5,7.6 14.2,12 15.8,18.7 10,15.2 4.2,18.7 5.8,12 0.5,7.6 7.4,7.2"/></svg>
+            <svg viewBox="0 0 20 20" class="star-icon filled"><polygon points="10,1 12.6,7.2 19.5,7.6 14.2,12 15.8,18.7 10,15.2 4.2,18.7 5.8,12 0.5,7.6 7.4,7.2"/></svg>
+            <svg viewBox="0 0 20 20" class="star-icon filled"><polygon points="10,1 12.6,7.2 19.5,7.6 14.2,12 15.8,18.7 10,15.2 4.2,18.7 5.8,12 0.5,7.6 7.4,7.2"/></svg>
+          </div>
+          <blockquote class="review-text">
+            <p>Mr. Nieto is a very efficient man. He is also a caring man that takes care of his customers. He has a knack for what he does and delivers very high quality work.</p>
+          </blockquote>
+          <footer class="review-author">
+            <div class="review-author-info">
+              <cite class="review-name">Romeo Nieto</cite>
+            </div>
+          </footer>
+        </article>
+
+        <!-- Review 4: Joziah Hernandez -->
+        <article class="review-card reveal" style="transition-delay: 0.35s">
+          <div class="review-quote-mark" aria-hidden="true">&ldquo;</div>
+          <div class="review-stars" aria-label="5 out of 5 stars">
+            <svg viewBox="0 0 20 20" class="star-icon filled"><polygon points="10,1 12.6,7.2 19.5,7.6 14.2,12 15.8,18.7 10,15.2 4.2,18.7 5.8,12 0.5,7.6 7.4,7.2"/></svg>
+            <svg viewBox="0 0 20 20" class="star-icon filled"><polygon points="10,1 12.6,7.2 19.5,7.6 14.2,12 15.8,18.7 10,15.2 4.2,18.7 5.8,12 0.5,7.6 7.4,7.2"/></svg>
+            <svg viewBox="0 0 20 20" class="star-icon filled"><polygon points="10,1 12.6,7.2 19.5,7.6 14.2,12 15.8,18.7 10,15.2 4.2,18.7 5.8,12 0.5,7.6 7.4,7.2"/></svg>
+            <svg viewBox="0 0 20 20" class="star-icon filled"><polygon points="10,1 12.6,7.2 19.5,7.6 14.2,12 15.8,18.7 10,15.2 4.2,18.7 5.8,12 0.5,7.6 7.4,7.2"/></svg>
+            <svg viewBox="0 0 20 20" class="star-icon filled"><polygon points="10,1 12.6,7.2 19.5,7.6 14.2,12 15.8,18.7 10,15.2 4.2,18.7 5.8,12 0.5,7.6 7.4,7.2"/></svg>
+          </div>
+          <blockquote class="review-text">
+            <p>Mr. Nieto is very good at what he does. From remodeling to roofing to building, he can do it all. He does quick and very good quality work, and prices are great for his work.</p>
+          </blockquote>
+          <footer class="review-author">
+            <div class="review-author-info">
+              <cite class="review-name">Joziah Hernandez</cite>
+            </div>
+          </footer>
+        </article>
+
+        <!-- Review 5: esther7hadassah -->
+        <article class="review-card reveal" style="transition-delay: 0.45s">
+          <div class="review-quote-mark" aria-hidden="true">&ldquo;</div>
+          <div class="review-stars" aria-label="5 out of 5 stars">
+            <svg viewBox="0 0 20 20" class="star-icon filled"><polygon points="10,1 12.6,7.2 19.5,7.6 14.2,12 15.8,18.7 10,15.2 4.2,18.7 5.8,12 0.5,7.6 7.4,7.2"/></svg>
+            <svg viewBox="0 0 20 20" class="star-icon filled"><polygon points="10,1 12.6,7.2 19.5,7.6 14.2,12 15.8,18.7 10,15.2 4.2,18.7 5.8,12 0.5,7.6 7.4,7.2"/></svg>
+            <svg viewBox="0 0 20 20" class="star-icon filled"><polygon points="10,1 12.6,7.2 19.5,7.6 14.2,12 15.8,18.7 10,15.2 4.2,18.7 5.8,12 0.5,7.6 7.4,7.2"/></svg>
+            <svg viewBox="0 0 20 20" class="star-icon filled"><polygon points="10,1 12.6,7.2 19.5,7.6 14.2,12 15.8,18.7 10,15.2 4.2,18.7 5.8,12 0.5,7.6 7.4,7.2"/></svg>
+            <svg viewBox="0 0 20 20" class="star-icon filled"><polygon points="10,1 12.6,7.2 19.5,7.6 14.2,12 15.8,18.7 10,15.2 4.2,18.7 5.8,12 0.5,7.6 7.4,7.2"/></svg>
+          </div>
+          <blockquote class="review-text">
+            <p>Mr. Nieto is very knowledgeable in the area of building and remodeling. He is precise with his work, trustworthy, and his pricing is very reasonable. I highly recommend his services.</p>
+          </blockquote>
+          <footer class="review-author">
+            <div class="review-author-info">
+              <cite class="review-name">esther7hadassah</cite>
+              <span class="review-badge">Local Guide</span>
+            </div>
+          </footer>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       VALUES BAR
+       ============================================================ -->
+  <section class="values-bar">
+    <div class="container">
+      <div class="values-grid">
+        <div class="value-item reveal" style="transition-delay: 0.05s">
+          <span class="value-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </span>
+          <h4>Built to Last</h4>
+          <p>Good materials and solid workmanship</p>
+        </div>
+        <div class="value-item reveal" style="transition-delay: 0.15s">
+          <span class="value-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          </span>
+          <h4>Clean Job Sites</h4>
+          <p>We clean up at the end of every day</p>
+        </div>
+        <div class="value-item reveal" style="transition-delay: 0.25s">
+          <span class="value-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </span>
+          <h4>Straight Talk</h4>
+          <p>You know what's happening and when</p>
+        </div>
+        <div class="value-item reveal" style="transition-delay: 0.35s">
+          <span class="value-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+          </span>
+          <h4>Storm Repair</h4>
+          <p>Experience with hurricane and storm damage</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       ABOUT
+       ============================================================ -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <span class="section-label">About</span>
+          <h2 class="section-heading">About us.</h2>
+          <hr class="gold-rule">
+          <p>Nieto Carpentry is owned and run by <strong>Enrique Nieto</strong>.</p>
+          <p>Enrique learned the trade on real job sites, working hands-on in framing, roofing, and remodeling. Over the years, that experience turned into a reputation for reliable work and honest pricing.</p>
+          <p>Projects are done by a small crew that shows up, does the work, and keeps the site clean. No middlemen. No surprises.</p>
+          <p>Based in <strong>Mont Belvieu</strong>, we work throughout Baytown and nearby communities.</p>
+        </div>
+        <div class="about-image reveal reveal-right">
+          <img src="assets/img/work-03.jpg"
+               alt="Enrique Nieto on the jobsite"
+               width="800" height="1000"
+               loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SERVICE AREA
+       ============================================================ -->
+  <section class="area">
+    <div class="container">
+      <div class="area-inner reveal">
+        <h2>Areas we serve.</h2>
+        <ul class="area-towns">
+          <li>Mont Belvieu</li>
+          <li>Baytown</li>
+          <li>Dayton</li>
+          <li>Liberty</li>
+          <li>Crosby</li>
+          <li>Huffman</li>
+          <li>Anahuac</li>
+          <li>Beach City</li>
+          <li>Highlands</li>
+          <li>Barbers Hill</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CTA BAND
+       ============================================================ -->
+  <section class="cta-band" id="contact">
+    <div class="container reveal">
+      <span class="section-label">Get Started</span>
+      <h2>Call to talk about<br>your project.</h2>
+      <hr class="gold-rule">
+      <p>Free estimates. No pressure.</p>
+      <a href="tel:8324149680" class="cta-phone">(832) 414-9680</a>
+      <br>
+      <a href="tel:8324149680" class="btn btn-gold">Call Now</a>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <div class="footer-logo">
+        <span class="logo-rule"></span>
+        Nieto Carpentry
+      </div>
+      <p>&copy; 2026 Nieto Carpentry. Mont Belvieu, TX. Licensed and insured.</p>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       LIGHTBOX (accessible)
+       ============================================================ -->
+  <div class="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <button class="lightbox-close" aria-label="Close image viewer">&times;</button>
+    <img src="" alt="">
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
