@@ -229,8 +229,6 @@ h1, h2, h3, h4 {
 .site-header.scrolled {
   background: rgba(44,41,38,0.97);
   box-shadow: 0 1px 12px rgba(0,0,0,0.15);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
 }
 
 .nav-inner {
@@ -1295,16 +1293,20 @@ h1, h2, h3, h4 {
 
   .nav-links {
     position: fixed;
-    inset: 0;
-    background: rgba(44,41,38,0.98);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    height: 100dvh;
+    z-index: 105;
+    background: rgba(44,41,38,0.99);
     flex-direction: column;
+    align-items: center;
     justify-content: center;
     gap: 2rem;
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.3s ease;
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
   }
 
   .nav-links.open {
