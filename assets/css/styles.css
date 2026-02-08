@@ -229,8 +229,6 @@ h1, h2, h3, h4 {
 .site-header.scrolled {
   background: rgba(44,41,38,0.97);
   box-shadow: 0 1px 12px rgba(0,0,0,0.15);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
 }
 
 .nav-inner {
@@ -1310,8 +1308,6 @@ h1, h2, h3, h4 {
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.3s ease;
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
   }
 
   .nav-links.open {
