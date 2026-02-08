@@ -1296,9 +1296,15 @@ h1, h2, h3, h4 {
 
   .nav-links {
     position: fixed;
-    inset: 0;
-    background: rgba(44,41,38,0.98);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    height: 100dvh;
+    z-index: 105;
+    background: rgba(44,41,38,0.99);
     flex-direction: column;
+    align-items: center;
     justify-content: center;
     gap: 2rem;
     opacity: 0;
